@@ -41,7 +41,7 @@ public class UsersServlet extends HttpServlet {
     private List getUsers() throws JsonProcessingException, IOException {
         // BEGIN
         String usersString = Files.readString(Path.of("src/main/resources/users.json"));
-        List<User> users = new ObjectMapper().readValue(usersString, new TypeReference<ArrayList<User>>() {});
+        List<User> users = new ObjectMapper().readValue(usersString, new TypeReference<ArrayList<User>>() { });
         return users;
         // END
     }
@@ -57,9 +57,13 @@ public class UsersServlet extends HttpServlet {
             usersTable.append("<tr>")
                     .append("<td>").append(user.getId()).append("</td>")
                     .append("<td>")
-                    .append("<a href=\"/users/" + user.getId() + "\">" +
-                            user.getFirstName() + " " + user.getLastName() +
-                            "</a>")
+                    .append("<a href=\"/users/"
+                            + user.getId()
+                            + "\">"
+                            + user.getFirstName()
+                            + " "
+                            + user.getLastName()
+                            + "</a>")
                     .append("</td>")
                     .append("</tr>");
         }
