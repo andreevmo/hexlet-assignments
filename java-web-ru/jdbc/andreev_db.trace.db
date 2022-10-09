@@ -1,0 +1,36 @@
+2022-10-09 12:22:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"
+Syntax error in SQL statement "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"; SQL statement:
+SELECT * FORM articles LIMIT 10 OFFSET ? [42000-200]
+2022-10-09 12:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"
+Syntax error in SQL statement "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"; SQL statement:
+SELECT * FORM articles LIMIT 10 OFFSET ? [42000-200]
+2022-10-09 12:24:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"
+Syntax error in SQL statement "SELECT * FORM[*] ARTICLES LIMIT 10 OFFSET ?"; SQL statement:
+SELECT * FORM articles LIMIT 10 OFFSET ? [42000-200]
+2022-10-09 13:35:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:37:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:37:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:43:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:44:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:46:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:53:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
+2022-10-09 13:58:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Нет данных
+No data is available [2000-200]
