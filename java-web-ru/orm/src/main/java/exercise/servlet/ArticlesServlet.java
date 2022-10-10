@@ -18,7 +18,6 @@ import exercise.domain.Category;
 // К названию добавляется префикс Q
 import exercise.domain.query.QArticle;
 import exercise.domain.query.QCategory;
-import org.h2.mvstore.Page;
 
 public class ArticlesServlet extends HttpServlet {
 
