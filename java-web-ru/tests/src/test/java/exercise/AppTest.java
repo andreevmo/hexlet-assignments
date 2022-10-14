@@ -75,7 +75,10 @@ class AppTest {
     // BEGIN
     @Test
     void testCreateUserCorrectData() {
-        String firstName = "Maxim", lastName = "Andreev", email = "maxim_525@mail.ru", password = "12345678";
+        String firstName = "Maxim";
+        String lastName = "Andreev";
+        String email = "maxim_525@mail.ru";
+        String password = "12345678";
         HttpResponse<String> response = Unirest.post(baseUrl + "/users")
                 .field("firstName", firstName)
                 .field("lastName", lastName)
@@ -94,7 +97,10 @@ class AppTest {
 
     @Test
     void testCreateUserIncorrectData() {
-        String firstName = "Maxim", lastName = "Andreev", email = "maxim_525mail.ru", password = "123";
+        String firstName = "Maxim";
+        String lastName = "Andreev";
+        String email = "maxim_525mail.ru";
+        String password = "123";
         HttpResponse<String> response = Unirest.post(baseUrl + "/users")
                 .field("firstName", firstName)
                 .field("lastName", lastName)
