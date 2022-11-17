@@ -34,10 +34,7 @@ public class PeopleController {
 
     // BEGIN
     @PostMapping(path = "")
-    public void savePerson(@RequestBody Map<String, Object> body) {
-        Person person = new Person();
-        person.setFirstName(body.get("firstName").toString());
-        person.setLastName(body.get("lastName").toString());
+    public void savePerson(@RequestBody Person person) {
         personRepository.save(person);
     }
 
@@ -48,10 +45,8 @@ public class PeopleController {
     }
 
     @PatchMapping(path = "/{id}")
-    public void updatePerson(@PathVariable long id, @RequestBody Map<String, Object> body) {
-        Person person = personRepository.findById(id);
-        person.setFirstName(body.get("firstName").toString());
-        person.setLastName(body.get("lastName").toString());
+    public void updatePerson(@PathVariable long id, @RequestBody Person person) {
+        person.setId(id);
         personRepository.save(person);
     }
     // END
