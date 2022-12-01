@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface CommentRepository extends CrudRepository<Comment, Long> {
 
     // BEGIN
-    Iterable<Comment> findByPostId(long postId);
+    Iterable<Comment> findAllByPostId(long postId);
     Optional<Comment> findByPostIdAndId(long postId, long commentId);
     // END
 }

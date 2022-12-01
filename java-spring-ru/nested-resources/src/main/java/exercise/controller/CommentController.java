@@ -29,7 +29,7 @@ public class CommentController {
     // BEGIN
     @GetMapping(path = "/{postId}/comments")
     public Iterable<Comment> getComments(@PathVariable long postId) {
-        return commentRepository.findByPostId(postId);
+        return commentRepository.findAllByPostId(postId);
     }
 
     @GetMapping(path = "/{postId}/comments/{commentId}")
