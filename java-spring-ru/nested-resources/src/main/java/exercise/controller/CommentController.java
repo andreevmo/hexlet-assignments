@@ -2,7 +2,6 @@ package exercise.controller;
 
 import exercise.model.Comment;
 import exercise.repository.CommentRepository;
-import exercise.model.Post;
 import exercise.repository.PostRepository;
 import exercise.ResourceNotFoundException;
 

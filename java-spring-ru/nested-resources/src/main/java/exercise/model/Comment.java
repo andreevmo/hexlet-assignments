@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.GenerationType;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.FetchType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -26,7 +25,7 @@ public class Comment {
     @Lob
     private String content;
     @JsonIgnore
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Post post;
     // END
 }
