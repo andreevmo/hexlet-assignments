@@ -45,7 +45,7 @@ public class CityController {
             String weather = weatherService.getWeather(c.getName());
             Map<String, String> weatherMap;
             try {
-                weatherMap =new ObjectMapper().readValue(weather, Map.class);
+                weatherMap = new ObjectMapper().readValue(weather, Map.class);
             } catch (JsonProcessingException e) {
                 throw new RuntimeException(e);
             }
