@@ -41,7 +41,7 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
         private Logger logger;
         private String level;
         private Object bean;
-        public Handler(Object bean, String level) {
+        Handler(Object bean, String level) {
             this.bean = bean;
             this.level = level;
         }
