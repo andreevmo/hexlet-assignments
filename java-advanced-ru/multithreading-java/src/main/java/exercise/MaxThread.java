@@ -1,8 +1,5 @@
 package exercise;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 // BEGIN
 public class MaxThread extends Thread {
 
