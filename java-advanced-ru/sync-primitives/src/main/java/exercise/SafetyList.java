@@ -9,11 +9,6 @@ class SafetyList {
         if (array.length <= capacity) {
             changeSizeArray();
         }
-        try {
-            Thread.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         array[capacity++] = element;
         return true;
     }
