@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+task checkSolution {
+    File file = file('./Dockerfile')
+
+    doLast {
+        if (file.length() <= 1) {
+            throw new Error("You need to add solution to Dockerfile")
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'exercise.App'
+        )
+    }
+}
+
+test {
+    dependsOn checkSolution
+}
